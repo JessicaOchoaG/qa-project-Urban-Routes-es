@@ -5,7 +5,6 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions
 from selenium.webdriver.support.wait import WebDriverWait
 
-
 # no modificar
 def retrieve_phone_code(driver) -> str:
     """Este código devuelve un número de confirmación de teléfono y lo devuelve como un string.
@@ -34,49 +33,13 @@ def retrieve_phone_code(driver) -> str:
         return code
 
 
-class UrbanRoutesPage:
-    from_field = (By.ID, 'from')
-    to_field = (By.ID, 'to')
+ #new_number_phone = "Number phone"
+        #self.driver.find_element(*self.phone_number_field).send_keys(new_number_phone)
+        # self.driver.find_element(*self.to_field).send_keys(to_address)
 
-    def __init__(self, driver):
-        self.driver = driver
+        #WebDriverWait(self.driver, 5).until(EC.presence_of_element_located(self.phone_number_field)).send_keys(new_phone_number)
 
-    def set_from(self, from_address):
-        self.driver.find_element(*self.from_field).send_keys(from_address)
-
-    def set_to(self, to_address):
-        self.driver.find_element(*self.to_field).send_keys(to_address)
-
-    def get_from(self):
-        return self.driver.find_element(*self.from_field).get_property('value')
-
-    def get_to(self):
-        return self.driver.find_element(*self.to_field).get_property('value')
+#def set_the_phone_number(self, the_phone_number):
+        #self.set_number_phone(the_phone_number)
 
 
-
-class TestUrbanRoutes:
-
-    driver = None
-
-    @classmethod
-    def setup_class(cls):
-        # no lo modifiques, ya que necesitamos un registro adicional habilitado para recuperar el código de confirmación del teléfono
-        from selenium.webdriver import DesiredCapabilities
-        capabilities = DesiredCapabilities.CHROME
-        capabilities["goog:loggingPrefs"] = {'performance': 'ALL'}
-        cls.driver = webdriver.Chrome(desired_capabilities=capabilities)
-
-    def test_set_route(self):
-        self.driver.get(data.urban_routes_url)
-        routes_page = UrbanRoutesPage(self.driver)
-        address_from = data.address_from
-        address_to = data.address_to
-        routes_page.set_route(address_from, address_to)
-        assert routes_page.get_from() == address_from
-        assert routes_page.get_to() == address_to
-
-
-    @classmethod
-    def teardown_class(cls):
-        cls.driver.quit()
