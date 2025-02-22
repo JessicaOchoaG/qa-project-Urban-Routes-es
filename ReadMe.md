@@ -7,18 +7,18 @@ El proyecto tiene como objetivo la comprobación de pruebas de funcionalidad de 
 
 
 - **Lista de comprobación**
-- 
-URL de servidor
-Configurar la dirección
-Seleccionar personal
-Pedir taxi
-Seleccionar la tarifa Comfort.
-Rellenar el número de teléfono.
-Agregar una tarjeta de crédito.
-Escribir un mensaje para el conductor
-Pedir una manta y pañuelos.
-Pedir 2 helados.
-Aparece el modal: buscar un taxi.
+
+- URL de servidor
+- Configurar la dirección
+- Seleccionar personal
+- Pedir taxi
+- Seleccionar la tarifa Comfort.
+- Rellenar el número de teléfono.
+- Agregar una tarjeta de crédito.
+- Escribir un mensaje para el conductor
+- Pedir una manta y pañuelos.
+- Pedir 2 helados.
+- Aparece el modal: buscar un taxi.
 
 
 
