@@ -34,13 +34,6 @@ def retrieve_phone_code(driver) -> str:
         return code
 
 
- #new_number_phone = "Number phone"
-        #self.driver.find_element(*self.phone_number_field).send_keys(new_number_phone)
-        # self.driver.find_element(*self.to_field).send_keys(to_address)
 
-        #WebDriverWait(self.driver, 5).until(EC.presence_of_element_located(self.phone_number_field)).send_keys(new_phone_number)
-
-#def set_the_phone_number(self, the_phone_number):
-        #self.set_number_phone(the_phone_number)
 
 

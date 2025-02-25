@@ -1,15 +1,8 @@
 import data
-from selenium import webdriver
-from selenium.webdriver import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.wait import WebDriverWait
-import main
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.chrome.options import Options
-import time
-from data import phone_number
-from main import retrieve_phone_code
+from helpers.retrieve_phone_code import retrieve_phone_code
 
 
 
@@ -219,6 +212,9 @@ class UrbanRoutesPage:
         self.driver.find_element(*self.ice_cream).click()
         self.driver.find_element(*self.counter_value)
         self.driver.find_element(*self.quantity_2)
+
+    def get_ice_cream_counter(self):
+        return self.driver.find_element(*self.ice_cream).get_property('value')
 
 
 
