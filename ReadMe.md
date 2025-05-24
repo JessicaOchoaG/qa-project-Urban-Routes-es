@@ -3,7 +3,7 @@
 
 - **Descripción del Proyecto**
 
-El proyecto tiene como objetivo la comprobación de pruebas de funcionalidad de Urban Routes.
+Este proyecto desarrolla pruebas automatizadas para Urban Routes, una aplicación destinada a la solicitud de servicios de taxi. Las pruebas cubren todo el flujo de reserva, incluyendo la selección del punto de partida y destino, la elección de una tarifa tipo confort, el ingreso de un número telefónico para validación vía SMS, la configuración del método de pago, el envío de mensajes al conductor, la elección de servicios adicionales, la confirmación del viaje, y la visualización de detalles como el nombre del conductor, las placas del vehículo y el tiempo estimado de llegada.
 
 
 - **Lista de comprobación**
